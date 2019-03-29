@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    font-family: "Open Sans";
+}
+
+
+.modal-backdrop{
+    z-index: -4;
+    background-color: white;
+
+}
+
+.logo-visorx{
+    width: 147px;
+    height: 36px;
+    left: 42px;
+    top: 38px;
+}
+.bg-visorx{
+    background-color: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.dboard-text{
+
+    font-family:Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    letter-spacing: -0.583333px;
+}
+.user-link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: -0.583333px;
+    position: relative;
+    top:15px;
+    left:5px;
+
+}
+.sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    /*z-index: -1; !* Behind the navbar *!*/
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.sidebar-icons-active{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.583333px;
+    color: #00C1FF;
+}
+.sidebar-icons{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: -0.583333px;
+
+    color: #3B426C;
+
+}
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #007bff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}
+
+.cards-headers{
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    letter-spacing: -0.583333px;
+    color: #3B426C;
+
+}
+.sub-headers{
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 26px;
+    letter-spacing: -0.583333px;
+    color: #3B426C;
+
+}
+a.cards-links {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.583333px;
+
+    color: #00C1FF;
+}
+
+@media only screen and (width: 1024px) {
+    .chartjsLegend {
+        /*width: 50%;*/
+        font-variant: small-caps;
+        position: absolute;
+        top: -220px;
+        right: -70px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        letter-spacing: -0.583333px;
+        color: #3B426C;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .chartjsLegend {
+        /*width: 50%;*/
+        font-variant: small-caps;
+        position: absolute;
+        top: -210px;
+        right:60px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        letter-spacing: -0.583333px;
+        color: #3B426C;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1023px) {
+    .chartjsLegend {
+        /*width: 50%;*/
+        font-variant: small-caps;
+        position: absolute;
+        top: -199px;
+        right: -20px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        letter-spacing: -0.583333px;
+        color: #3B426C;
+    }
+}
+/*@media only screen and (width: 768px) {*/
+/*.chartjsLegend {*/
+/*!*width: 50%;*!*/
+/*font-variant: small-caps;*/
+/*position: absolute;*/
+/*top: -150px;*/
+/*right: 10px;*/
+/*font-family: Open Sans;*/
+/*font-style: normal;*/
+/*font-weight: normal;*/
+/*line-height: normal;*/
+/*font-size: 14px;*/
+/*letter-spacing: -0.583333px;*/
+/*color: #3B426C;*/
+/*}*/
+
+/*}*/
+
+.chartjsLegend ul li{list-style:none;}
+.chartjsLegend ul li span{ width:20px; height:20px;border-radius:50%;display:inline-block; margin:15px 0px 2px 0px; }
+
+.form-control{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 70%;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: -0.583333px;
+    color: #B0B0B0;
+}
+
+.btn-rounded{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.table-name{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: -0.583333px;
+
+    color: #00C1FF;
+}
+
+.status-number{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 40px;
+    color:#00C1FF;
+}

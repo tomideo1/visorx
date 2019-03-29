@@ -1,0 +1,28 @@
+$date=date_create(Session::get('end_date'));
+        date_sub($date, date_interval_create_from_date_string("7 days"));
+        $users1 = DB::table("processed_logs")
+
+            ->join('computers', 'processed_logs.computer_name', '=', 'computers.computer_name')
+
+            ->where('computers.active', true)
+
+            ->groupBy('computers.computer_name', 'processed_logs.logged_on_user')
+
+            ->where('processed_logs.date_time_logged', '>=', date_format($date,"Y-m-d") )
+
+            ->where('processed_logs.date_time_logged', '<=', Session::get('end_date').' 23:59:59')
+
+            ->select(DB::raw('processed_logs.computer_name'))
+
+            ->get();
+
+        $users1 = $users1->toArray();
+
+        $users = DB::table("computers")
+
+            ->select(DB::raw('computer_name'))->get();
+
+        $users = $users->toArray();
+
+        $users = array_map('serialize', $users);
+        $users1 = array_map('serialize', $users1);
