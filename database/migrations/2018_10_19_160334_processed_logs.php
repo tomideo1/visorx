@@ -19,6 +19,7 @@ class ProcessedLogs extends Migration
             $table->string('source_mac')->default('NULL');
             $table->string('destination_ip')->default('NULL');
             $table->string('url')->default('NULL');
+            $table->string('domain_name')->default('NULL');
             $table->integer('packet_size')->nullable();
             $table->string('destination_mac')->default('NULL');
             $table->string('computer_name')->default('NULL');
