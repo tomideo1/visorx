@@ -19,6 +19,7 @@ class CreateDataUsage extends Migration
             $table->bigInteger('bytes_received');
             $table->string('computer_name');
             $table->string('logged_on_user');
+            $table->timestamp('date_time_logged');
             $table->timestamps();
         });
     }
